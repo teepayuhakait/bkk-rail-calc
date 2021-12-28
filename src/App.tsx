@@ -1,8 +1,12 @@
+// libs
 import React from 'react'
+import { registerRootComponent } from 'expo'
+
+// components
 import { StatusBar } from 'expo-status-bar'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function App(): JSX.Element {
+function App(): JSX.Element {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
@@ -19,3 +23,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 })
+
+export default registerRootComponent(App)
